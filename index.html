@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Parcial Willy Gutierrez</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .contenedor-principal{
+            display: flex;
+            flex-wrap: wrap;
+        }        
+        nav{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            background-color: blanchedalmond;
+            flex-wrap: nowrap;
+        }
+        .logo{
+            width: 20%;
+            padding: 3%;
+            background-color: aliceblue;
+            align-items: center;
+            text-align: center;
+        }
+        .menu{
+            width: 80%;
+            margin-left: 2%;            
+            line-height: 50px;
+            flex-direction: column;
+            align-content: space-between;
+        }
+        .viewcart{
+            text-align: end;
+        }
+        .search{
+            text-align: end;
+        }
+        .enlacesweb{
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .telefono{
+            text-align: end;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        li{
+            list-style: none;
+            text-align: start;
+        }        
+        main{
+            width: 100%;
+            flex-direction: column;
+        }        
+        .presentacion{
+            display: flex;
+            margin-top: 2%;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-around;
+        }         
+        table{
+            width: 30%;
+            margin-right: 2%;
+            padding: 10px;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: gainsboro;
+            border-collapse: collapse;
+        }
+        figure{
+            display: flex;
+            width: 70%;
+            background-color: aqua;
+            height: 300px;
+            align-items: end;
+        }
+        tr{
+            border-color: black;
+            border-width: 3px;
+            border-style: solid;
+            text-align: start;
+        }
+        td{
+            border-color: black;
+            border-width: 3px;
+            border-style: solid;
+        }        
+        .productos{
+            display: flex;
+            margin-top: 2%;
+            background-color: aquamarine;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .featuredproducts{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .figureproducts{
+            display: flex;
+            width: 50%;
+            height: 80%;
+        }
+        section{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        article{
+            display: flex;
+            width: 50%;
+            margin-top: 2%;
+            margin-right: 2%;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+            background-color: azure;
+            flex-direction: row;
+        }
+        .parrafo{
+            background-color: blue;
+            border-color: black;
+            border-style: solid;
+            border-width: 3px;
+        }
+        .producttitle{
+            display: flex;
+            flex-direction: column;
+        }
+        .espacio{
+            width: 40%;
+            background-color: brown;
+        }        
+        .titulo3{
+            display: flex;
+            padding: 10px;
+            margin-right: 2%;
+            border-color: black;
+            border-style: solid;
+            border-width: 2px;
+            flex-direction: row;
+        }        
+        .botonmore{
+            width: 50%;
+            margin: 2%;
+            border-radius: 20px;
+        }
+        footer{
+            width: 100%;
+            display: flex;
+            height: 100px;
+            flex-direction: column;
+            background-color: beige;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin-top: 2%;
+        }
+        #contador {
+            font-size: 24px;
+            text-align: center;
+        }
+        #reloj {
+            font-size: 24px;
+            text-align: end;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor-principal">
+        <nav>
+            <div id="logo" class="logo">LOGO</div>
+            <div id="menu" class="menu">
+                <div class="viewcart">
+                    <p>View Cart Order History</p>
+                </div>
+                <div class="search">
+                    <input type="text" style="width: 35%;" placeholder="Products, Parts, Keywords Search">
+                    <button>Search</button>
+                </div>
+                <div class="enlacesweb">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Support</a></li>
+                        <li><a href="">Contact</a></li>
+                        <div class="telefono">800-888-8888</div>
+                    </ul>                    
+                </div>
+            </div>
+        </nav>        
+        <main>
+            <div class="presentacion">
+                <table id="tabla">
+                    <tr><td>Rainfal Sensors</td></tr>
+                    <tr><td>Wind Anemometer</td></tr>
+                    <tr><td>Weather Satations</td></tr>
+                    <tr><td>Controllers</td></tr>
+                    <tr><td>Indicators/Displays</td></tr>
+                    <tr><td>Temp/Humidity Sensors</td></tr>
+                    <tr><td>Barometric Pressure</td></tr>
+                    <tr><td>Solar Radiation</td></tr>
+                    <tr><td>Replacement Parts</td></tr>                    
+                </table>
+                <figure id="figura">
+                    <img src="" alt="">
+                </figure>
+            </div>
+            <div id="productos" class="productos">
+                <div class="featuredproducts">
+                    <div class="titulo3">
+                        <h3>Featured Products</h3>
+                        <div id="reloj"></div>
+                    </div>
+                    <section>
+                        <article>
+                            <figure id="figura" class="figureproducts">
+                                <img src="" alt="">
+                            </figure>
+                            <div class="producttitle">
+                                <h4>Product Title</h4>
+                                <h5>SKU</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <button class="botonmore">More Info >></button>
+                            </div>
+                        </article>
+                        <article>
+                            <figure id="figura" class="figureproducts">
+                                <img src="" alt="">
+                            </figure>
+                            <div class="producttitle">
+                                <h4>Product Title</h4>
+                                <h5>SKU</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <button class="botonmore">More Info >></button>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article>
+                            <figure id="figura" class="figureproducts">
+                                <img src="" alt="">
+                            </figure>
+                            <div class="producttitle">
+                                <h4>Product Title</h4>
+                                <h5>SKU</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <button class="botonmore">More Info >></button>
+                            </div>
+                        </article>
+                        <article>
+                            <figure id="figura" class="figureproducts">
+                                <img src="" alt="">
+                            </figure>
+                            <div class="producttitle">
+                                <h4>Product Title</h4>
+                                <h5>SKU</h5>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                                <button onclick="CambiarEstilosDinamicos(['logo', 'menu', 'tabla', 'figura', 'contador', 'productos'])" class="botonmore">Cambiar estilos</button>
+                            </div>
+                        </article>
+                    </section>
+                </div>                
+                <div id="contador" class="espacio">Clics: 0</div>
+            </div>            
+        </main>
+        <footer>
+            <div class="barranegra"></div>
+        </footer>
+    </div>
+    <script>
+        // Contador de clics
+        let contador = 0;
+      
+        // Función que se ejecuta cada vez que hay un clic en la página
+        document.addEventListener('click', function() {
+          contador++;
+          actualizarContador();
+        });
+      
+        function actualizarContador() {
+          const contadorElemento = document.getElementById('contador');
+          contadorElemento.textContent = 'Clics: ' + contador;
+        }
+
+        // Función para actualizar el reloj
+        function actualizarReloj() {
+            const ahora = new Date();
+            const horas = ahora.getHours().toString().padStart(2, '0');
+            const minutos = ahora.getMinutes().toString().padStart(2, '0');
+            const segundos = ahora.getSeconds().toString().padStart(2, '0');
+            
+            const relojElemento = document.getElementById('reloj');
+            relojElemento.textContent = `${horas}:${minutos}:${segundos}`;
+        }
+
+        // Actualizar el reloj cada segundo
+        setInterval(actualizarReloj, 1000);
+
+        // Actualizar el reloj inmediatamente al cargar la página
+        actualizarReloj();
+
+        // Función para cambiar estilos dinámicamente
+        function CambiarEstilosDinamicos(ids) {
+            ids.forEach(function(id) {
+            const cajaElemento = document.getElementById(id);
+
+            // Propiedades de estilo aleatorias
+            const propiedades = ['backgroundColor', 'color', 'borderRadius'];
+            const propiedadAleatoria = propiedades[Math.floor(Math.random() * propiedades.length)];
+
+            // Valor aleatorio para la propiedad (puedes personalizar según tus necesidades)
+            let valorAleatorio;
+            if (propiedadAleatoria === 'backgroundColor' || propiedadAleatoria === 'color') {
+                valorAleatorio = getRandomColor();
+            } else if (propiedadAleatoria === 'borderRadius') {
+                valorAleatorio = Math.floor(Math.random() * 20) + 'px';
+            }
+
+            // Aplicar el cambio de estilo
+            cajaElemento.style[propiedadAleatoria] = valorAleatorio;
+            });
+        }
+
+        // Función para obtener un color aleatorio en formato hexadecimal
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
